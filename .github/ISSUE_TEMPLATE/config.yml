@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://sandbox.btea.dev/security
+    about: Report vulnerabilities, credential leaks, and privacy issues privately. Do not open a public issue.
+  - name: Sandbox help and FAQ
+    url: https://sandbox.btea.dev/faq
+    about: How the sandbox works, account limits, and report behavior.
+  - name: Terms and abuse contact
+    url: https://sandbox.btea.dev/terms
+    about: Abuse reports and legal or takedown requests.

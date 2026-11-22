@@ -1,0 +1,50 @@
+name: Feature request
+description: Suggest an improvement or a new capability for Sandbox.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem first. That makes it easier to judge the proposed change.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate request.
+          required: true
+        - label: This request does not require access to private data, credentials, or live malware.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Explain what you need and what you do today instead.
+      placeholder: When reviewing a report, I need to ... Today I have to ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed behavior
+      description: Describe what should happen. Include an example if you can.
+      placeholder: Add ... so that ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches, workarounds, or products that solve the same problem.
+      placeholder: Another platform does ...; a simpler alternative would be ...
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that matters, including related issues or similar tools.

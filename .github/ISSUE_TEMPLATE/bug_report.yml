@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a reproducible, non-security problem with Sandbox.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep this issue to one bug. Do not include credentials, private data, or malware samples.
+
+        For security issues, use the [security page](https://sandbox.btea.dev/security). Do not report them here.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: This is not a security vulnerability, credential leak, or privacy issue.
+          required: true
+        - label: This issue contains no malware, API keys, cookies, or other secrets.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe what you saw and why it looks wrong.
+      placeholder: On the analysis report page, clicking ... produced ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+      placeholder: The report should have loaded ... without ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Give the shortest reliable sequence. Include the analysis URL or public ID if this is report-specific.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag images into this field if they help.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, operating system, device, and any network details that matter.
+      placeholder: |
+        Browser: Firefox 145 (Linux x86_64)
+        Device: Desktop
+        Network: ...
+    validations:
+      required: true
+
+  - type: input
+    id: analysis
+    attributes:
+      label: Analysis URL or public ID (optional)
+      description: Only if the bug is specific to one report. Do not paste the sample.
+      placeholder: https://sandbox.btea.dev/analysis/01...
+
+  - type: input
+    id: time
+    attributes:
+      label: Approximate time (optional)
+      description: When the problem occurred, in UTC if possible.
+      placeholder: 2026-11-22 01:30 UTC
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Whether it is intermittent, happens on another device, or started after a specific change.
